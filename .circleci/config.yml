@@ -6,7 +6,7 @@ orbs:
 jobs:
   build-image:
     docker:
-      - image: circleci/golang:1.17.2
+      - image: cimg/go:1.17.2
     steps:
       - checkout
       - setup_remote_docker
