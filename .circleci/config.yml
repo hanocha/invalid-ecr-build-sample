@@ -10,7 +10,6 @@ jobs:
     steps:
       - checkout
       - aws-ecr/build-image:
-          region: ap-northeast-1
           tag: "$CIRCLE_SHA1"
           repo: "invalid-ecr-build-sample"
 
