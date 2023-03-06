@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - aws-ecr/build-image:
-          repo: "hoge"
+          repo: "invalid-ecr-build-sample"
 
 workflows:
   main:
