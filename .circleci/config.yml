@@ -9,7 +9,7 @@ jobs:
       - image: circleci/golang:1.17.2
     steps:
       - checkout
-      - aws-ecr/build-image:
+      - aws-ecr/build-and-push-image:
           repo: "invalid-ecr-build-sample"
 
 workflows:
